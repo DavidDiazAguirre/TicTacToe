@@ -2,44 +2,37 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TicTacToe</title>
+    <title>Tic Tac Toe</title>
 </head>
-<body>
-    <div class="container text-center">
-        <div class="row mt-5">
-          <div class="col border pt-5 pb-5">
-            Column
-          </div>
-          <div class="col border pt-5 pb-5">
-            Column
-          </div>
-          <div class="col border pt-5 pb-5">
-            Column
-          </div>
-        </div>
-        <div class="row">
-            <div class="col border pt-5 pb-5">
-                Column
+<body class="bg-dark text-center">
+    <div class="container text-light">
+        <h1>Tic Tac Toe</h1>
+        <h2></h2>
+        <div class="col">
+            <div class="row">
+                <div class="board-row"> <!--exists because .row is already a class in bootstrap.css. I had to make a new row type to style with css. And, without .row, the .col does not span the entire board, only the first row for some reason-->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
             </div>
-            <div class="col border pt-5 pb-5">
-                Column
+            <div class="row">    
+                <div class="board-row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
             </div>
-            <div class="col border pt-5 pb-5">
-                Column
-            </div>
-        </div>
-        <div class="row">
-            <div class="col border pt-5 pb-5">
-                Column
-            </div>
-            <div class="col border pt-5 pb-5">
-                Column
-            </div>
-            <div class="col border pt-5 pb-5">
-                Column
+            <div class="row">
+                <div class="board-row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
             </div>
         </div>
     </div>
